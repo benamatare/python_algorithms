@@ -1,6 +1,24 @@
+
 # Reverse a string
 def reverse_string(input_string):
     return input_string[::-1], input_string
+
+
+def reverse_string_2(input_string):
+  output = ""
+  for index in range(len(input_string)-1, -1, -1):
+    output += input_string[index]
+  return output
+
+# def capitilize(input_string):
+#   output = ""
+#   for index, letter in enumerate(input_string):
+#     if letter == ' ':
+#       # get the spaces
+#       # i know these are words
+#       #  caprutre them?
+#       print(letter, index)
+
 
 # Check if a string is a Palindrome or not
 def check_palindrome(input_string):
@@ -30,3 +48,6 @@ def bubble_sort(arr, sorted = False):
         # you're not sorted, when the list is 'sorted' this if won't be triggered
         sorted = False
         arr[i], arr[i+1] = arr[i+1], arr[i]
+
+
+capitilize('hello there human, GOOD day')
